@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TASK-1</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>XYZ</h1>
+    </header>
+
+    <nav class="navbar">
+        <button class="btn btn-secondary" id="logsign-btn">Log In / Sign Up</button>
+    </nav>
+
+    
+
+    <section class="modal hidden" id="login-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Login</h2>
+                <button class="btn-close" id="login-close-btn">&times;</button>
+            </div>
+            <form id="login-form">
+                <input type="text" id="usn" placeholder="Enter Email" class="form-control" required/>
+                <input type="password" id="pw" placeholder="Enter Password" class="form-control" required/>
+                <input type="submit" class="btn btn-dark" value="Log In" id="login-submit" />
+                
+                <span id="signup" class="ms-2">
+                    New User? <a href="#" class="link-primary" id="signup-link">Sign Up</a>
+                  </span>
+                  
+            </form>
+        </div>
+    </section>
+    
+
+    <div class="modal hidden" id="signup-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Sign Up</h2>
+            <button class="btn-close" id="signup-close-btn">&times;</button>
+          </div>
+          <form>
+            <input type="text" placeholder="First Name" required />
+            <input type="text" placeholder="Middle Name" />
+            <input type="text" placeholder="Last Name" required />
+            <input type="email" id="signup-email" placeholder="Email" required />
+            <input type="password" id="signup-password" placeholder="Create Password" required />
+            <input type="password" placeholder="Confirm Password" required />
+            <input type="tel" placeholder="Phone Number" required />
+            <textarea placeholder="Comment" required></textarea>
+            <button type="submit" id="signup-submit" class="btn">Sign Up</button>
+            <p>Already have an account? <a href="#" id="back-to-login">Log In</a></p>
+          </form>
+        </div>
+      </div>
+      
+    <!-- <footer>
+            <h2> --- </h2>     
+         </footer> -->
+    <script src="index.js"></script>
+</body>
+</html>
